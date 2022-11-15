@@ -1,0 +1,86 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  font-weight: 800;
+  font-size: 24px;
+  margin-left: 20px;
+  background-color: rgb(218, 217, 217);
+  border: 1px solid rgb(220, 217, 217);
+  border-radius: 25px;
+  margin-right: 20px;
+  padding-left: 15px;
+}
+
+.score-rankings {
+  border: 2px solid rgb(156, 155, 155);
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  height: 35px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.add-button {
+  width: 60px;
+  height: 35px;
+  align-self: flex-end;
+}
+
+.refresh {
+  height: 40px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-div {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 50%;
+}
+
+.headings {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  font-size: 20px;
+  bottom: 5px;
+  background-color: rgb(218, 217, 217);
+  border: 1px solid rgb(220, 217, 217);
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: absolute;
+  width: 97%;
+  padding: 10px;
+  text-align: center;
+}
