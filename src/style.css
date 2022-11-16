@@ -1,0 +1,109 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  font-weight: 800;
+  font-size: 24px;
+  margin-left: 20px;
+  background-color: rgb(218, 217, 217);
+  border: 1px solid rgb(220, 217, 217);
+  border-radius: 25px;
+  margin-right: 20px;
+  padding-left: 15px;
+}
+
+.score-rankings {
+  border: 2px solid rgb(156, 155, 155);
+  width: 99%;
+  margin: 0;
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  height: 35px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.add-button {
+  width: 100px;
+  height: 35px;
+  align-self: flex-end;
+}
+
+.refresh {
+  height: 40px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.scores {
+  width: 60%;
+}
+
+.score-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.score-li {
+  padding: 10px;
+}
+
+.score-li:nth-child(even) {
+  background-color: rgb(202, 202, 201);
+}
+
+.main-div {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 80%;
+}
+
+.headings {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  font-size: 20px;
+  bottom: 5px;
+  background-color: rgb(218, 217, 217);
+  border: 1px solid rgb(220, 217, 217);
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: absolute;
+  width: 97%;
+  padding: 10px;
+  text-align: center;
+}
