@@ -9,7 +9,7 @@ export default class GameAPi {
   }
 
   sendRequest(method, url, data) {
-    const promise = new Promise((resolve, reject) => { 
+    const promise = new Promise((resolve, reject) => {
       const req = new XMLHttpRequest();
       req.open(method, url);
       req.responseType = 'json';
@@ -51,7 +51,7 @@ export default class GameAPi {
       req.open('POST', this.url);
       req.onload = () => {
         if (req.status === 200) {
-          const res = req.response.result.split(' ');  
+          const res = req.response.result.split(' ');
           if (res[res.length - 1].split('.')[0] == 'Added') {
             const gameId = res[3];
             resolve(gameId);
