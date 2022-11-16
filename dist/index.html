@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../dist/main.js"></script>
+  <title>Leaderboard</title>
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+<body>
+  <header class="header">
+    <h1>Leaderboard</h1>
+  </header>
+  <main class="main">
+    <div class="main-div">
+      <section class="scores">
+        <div class="headings">
+          <h3>Recent Scores</h3>
+          <button class="refresh"><span>Refresh</span> <i class="fa fa-refresh fa-lg"></i></button>
+        </div>
+        <div class="score-rankings">
+
+        </div>
+      </section>
+      <section class="add-score">
+        <div class="headings">
+          <h3>Add Scores</h3>
+        </div>
+        <form action="#" method="post" class="form">
+          <input type="text" id="name" class="input" placeholder="Your Name" required>
+          <input type="text" id="score" class="input" placeholder="Your Score" required>
+          <button type="submit" class="add-button">Submit</button>
+        </form>
+      </section>   
+    </div>
+
+  </main>
+  <footer class="footer">
+    copyright &copy; leaderboad-game &nbsp;&nbsp;&nbsp;
+  </footer>
+</body>
+</html>
