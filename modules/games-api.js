@@ -1,3 +1,4 @@
+/*
 export default class GameAPi {
   constructor() {
     this.gameName = '{ "name": "Card Scores"}';
@@ -63,3 +64,4 @@ export default class GameAPi {
     });
   }
 }
+*/
