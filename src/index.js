@@ -4,7 +4,7 @@ import GameAPI from '../modules/games-api.js';
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 const gameName = 'Kika Games';
 const gameId = GameAPI.checkGame(url, gameName);
-const newUrl = url + gameId + '/scores/';
+const newUrl = url.concat(gameId, '/scores/');
 
 const addBtn = document.getElementById('btn');
 const reloadBtn = document.getElementById('reload-btn');
@@ -28,6 +28,6 @@ window.addEventListener('load', () => {
 reloadBtn.addEventListener('click', () => {
   if (gameId.length > 0) {
     window.history.go(0);
-    GameAPI.getScores(url + gameId + '/scores/');
+    GameAPI.getScores(newUrl);
   }
 });

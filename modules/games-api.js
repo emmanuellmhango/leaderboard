@@ -7,7 +7,7 @@ export default class GameAPi {
   static async createGame(gameName, url) {
     const result = await fetch(url, {
       method: 'POST',
-      body: JSON.stringify( { name: gameName } ),
+      body: JSON.stringify({ name: gameName }),
       headers: {
         'Content-type': 'application/json',
       },
