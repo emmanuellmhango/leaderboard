@@ -16,18 +16,10 @@
       <section class="scores">
         <div class="headings">
           <h3>Recent Scores</h3>
-          <button class="refresh"><span>Refresh</span> <i class="fa fa-refresh fa-lg"></i></button>
+          <button class="refresh" id="reload-btn"><span>Refresh</span> <i class="fa fa-refresh fa-lg"></i></button>
         </div>
         <div class="score-rankings">
-          <ul class="score-ul">
-            <li class="score-li"><span>Emmanuel Mhango: </span> <span>1250 Points</span></li>
-            <li class="score-li"><span>Emmanuel Mhango: </span> <span>1250 Points</span></li>
-            <li class="score-li"><span>Emmanuel Mhango: </span> <span>1250 Points</span></li>
-            <li class="score-li"><span>Emmanuel Mhango: </span> <span>1250 Points</span></li>
-            <li class="score-li"><span>Emmanuel Mhango: </span> <span>1250 Points</span></li>
-            <li class="score-li"><span>Emmanuel Mhango: </span> <span>1250 Points</span></li>
-            <li class="score-li"><span>Emmanuel Mhango: </span> <span>1250 Points</span></li>
-            <li class="score-li"><span>Emmanuel Mhango: </span> <span>1250 Points</span></li>
+          <ul class="score-ul" id="ul">
           </ul>
         </div>
       </section>
@@ -35,11 +27,12 @@
         <div class="headings">
           <h3>Add Scores</h3>
         </div>
-        <form action="#" method="post" class="form">
+        <form action="" method="post" class="form">
           <input type="text" id="name" class="input" placeholder="Your Name" required>
           <input type="text" id="score" class="input" placeholder="Your Score" required>
-          <button type="submit" class="add-button">Submit</button>
+          <input type="button" class="add-button" id="btn" value="Submit">
         </form>
+        <div class="result"></div>
       </section>   
     </div>
   </main>
