@@ -12,6 +12,9 @@ const reloadBtn = document.getElementById('reload-btn');
 addBtn.addEventListener('click', () => {
   const userS = document.getElementById('name').value;
   const scoreS = document.getElementById('score').value;
+  if (userS == "" || scoreS == "") {
+    return false;
+  }
   const data = {
     user: userS,
     score: scoreS,

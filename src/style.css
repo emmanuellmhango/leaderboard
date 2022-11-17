@@ -33,13 +33,16 @@ body {
 .input {
   height: 35px;
   margin-bottom: 20px;
-  border-radius: 2px;
 }
 
 .add-button {
   width: 100px;
-  height: 35px;
+  height: 38px;
   align-self: flex-end;
+  background-color: rgb(42, 140, 140);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
 }
 
 .refresh {
@@ -48,6 +51,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 8px;
+  background-color: rgb(42, 140, 140);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
 }
 
 .main {
@@ -113,4 +121,10 @@ body {
   font-weight: 600;
   margin-top: 10px;
   text-align: center;
+}
+
+.input:focus,
+.input:hover {
+  border-color: rgb(39, 249, 249);
+  border-radius: 10px;
 }
