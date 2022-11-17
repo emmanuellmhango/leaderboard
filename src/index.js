@@ -1,8 +1,11 @@
 import './style.css';
-import GameAPI from '../modules/games-api';
+import GameAPI from '../modules/games-api.js';
+
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 const gameName = 'Kika Games';
 const gameId = GameAPI.checkGame(url, gameName);
+const newUrl = url + gameId + '/scores/';
+
 const addBtn = document.getElementById('btn');
 const reloadBtn = document.getElementById('reload-btn');
 
@@ -14,12 +17,12 @@ addBtn.addEventListener('click', () => {
     score: scoreS,
   };
   if (gameId.length > 0) {
-    GameAPI.postScores(url + gameId + '/scores/', data);
+    GameAPI.postScores(newUrl, data);
   }
 });
 
-window.addEventListener('load', () => { 
-  GameAPI.getScores(url + gameId + '/scores/');
+window.addEventListener('load', () => {
+  GameAPI.getScores(newUrl);
 });
 
 reloadBtn.addEventListener('click', () => {

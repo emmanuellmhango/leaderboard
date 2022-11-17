@@ -2,13 +2,12 @@ export default class GameAPi {
   constructor(name, url) {
     this.gameName = name;
     this.url = url;
-    this.gameID = checkGame(this.url, this.gameName);
   }
 
   static async createGame(gameName, url) {
     const result = await fetch(url, {
       method: 'POST',
-      body: JSON.stringify({name: gameName}),
+      body: JSON.stringify( { name: gameName } ),
       headers: {
         'Content-type': 'application/json',
       },
@@ -29,6 +28,7 @@ export default class GameAPi {
     } else {
       return gameId;
     }
+    return false;
   }
 
   static async postScores(url, data) {
@@ -40,8 +40,8 @@ export default class GameAPi {
       },
     })
       .then((response) => response.json())
-      .then((json) => {
-        document.querySelector('.result').innerHTML = "The score has been added";
+      .then(() => {
+        document.querySelector('.result').innerHTML = 'The score has been added';
         this.previewScore(document.getElementById('ul'), [data.user, data.score]);
       });
     return result;
@@ -72,7 +72,4 @@ export default class GameAPi {
       ul.appendChild(li);
     });
   }
-
-
-
 }
